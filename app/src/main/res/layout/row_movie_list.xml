@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_alignParentLeft="true"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_poster"/>
+
+        <com.codetoart.assignment.Utils.CustomNormalTextView
+            android:id="@+id/txt_movie_title"
+            android:layout_toRightOf="@+id/img_poster"
+            android:layout_toLeftOf="@+id/img_next"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text=""
+            android:textColor="@color/dark_text"
+            android:textSize="18sp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/img_next"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_next"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <com.codetoart.assignment.Utils.CustomNormalTextView
+            android:id="@+id/txt_date"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/light_text"/>
+
+        <com.codetoart.assignment.Utils.CustomNormalTextView
+            android:id="@+id/txt_certificate"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/light_text"/>
+        
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_text"/>
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.codetoart.assignment.Activity.MovieDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_movie_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.codetoart.assignment.Utils.CustomNormalTextView
+                android:id="@+id/txt_title"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/PrimaryTextColor"
+                android:textSize="22sp"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/info_icon"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/slider_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            app:ci_drawable="@drawable/slider_circle_dark"
+            app:ci_drawable_unselected="@drawable/slider_circle_grey" />
+
+    </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bordered_button_thin_grey">
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.codetoart.assignment.Utils.CustomNormalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_text"
+                    android:textSize="18sp"
+                    android:text="@string/title"/>
+
+                <com.codetoart.assignment.Utils.CustomNormalTextView
+                    android:id="@+id/txt_title_md"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_text"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_text"/>
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+            <com.codetoart.assignment.Utils.CustomNormalTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/dark_text"
+                android:text="@string/overview"/>
+
+                <com.codetoart.assignment.Utils.CustomNormalTextView
+                    android:id="@+id/txt_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_text"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_text"/>
+
+            <RatingBar
+                android:id="@+id/rb_movie"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:theme="@style/RatingBar"
+                android:rating="3"
+                android:stepSize="0.5"
+                android:numStars="5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Assignment</string>
+
+    <string name="upcoming_movies">Upcoming Movies</string>
+    <string name="adult">( A )</string>
+    <string name="non_adult">( U/A )</string>
+    <string name="check_connection">No internet connection</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="info">Information</string>
+    <string name="developed_by">Developed by</string>
+    <string name="prashant">Prashant Chaudhari</string>
+    <string name="title">Title : </string>
+    <string name="overview">Overview : </string>
+</resources>
