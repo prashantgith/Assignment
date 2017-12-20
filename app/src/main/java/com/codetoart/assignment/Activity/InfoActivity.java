@@ -21,6 +21,13 @@ import android.os.Bundle;
 
 import com.codetoart.assignment.R;
 
+/**
+ * Created by DELL on 12/9/2017.
+ *
+ * A file to declare commonly used utility functions
+ *
+ */
+
 public class InfoActivity extends AppCompatActivity {
 
     @Override
