@@ -34,6 +34,14 @@ import java.util.ArrayList;
 
 import me.relex.circleindicator.CircleIndicator;
 
+/**
+ * Created by DELL on 12/9/2017.
+ *
+ * A file to declare commonly used utility functions
+ *
+ */
+
+
 public class MovieDetailsActivity extends AppCompatActivity {
 
     private Toolbar mTbMovieDetails;
